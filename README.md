@@ -1,3 +1,5 @@
 # piratesTest
 
-test
+phase1
+   ├── client (React)
+   └── server (Express)
