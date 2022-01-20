@@ -1,0 +1,86 @@
+:root {
+    --commonColor_1st-color: #000957;
+    --commonColor_2nd-color: #344CB7;
+    --commonColor_3rd-color: #577BC1;
+    --commonColor_4th-color: #EBE645;
+
+    --testWidth-width: 300px;
+    --testheight-height: 150px;
+
+    --testBorderColor-color: white;
+
+    --commonMargin-margin: 10px;
+}
+
+/* 
+:root 내부에서 변수 네이밍방식 
+--변수이름-요소: 설정값;
+
+클래스에서 사용 방식
+color: var(변수이름);
+
+컬러 및 <main> 사이즈 확정 시 common.css 
+재수정 예정.
+
+assets/css 폴더 'rootTest.html' 파일
+라이브 실행 시 해당 변수들 적용 화면 확인가능.
+추후 삭제 예정.
+*/
+
+.colorTest1 {
+    margin-top: var(--commonMargin-margin);
+    width: var(--testWidth-width);
+    height: var(--testheight-height);
+    background-color: var(--commonColor_1st-color);
+}
+
+.colorTest2 {
+    margin-top: var(--commonMargin-margin);
+    width: var(--testWidth-width);
+    height: var(--testheight-height);
+    background-color: var(--commonColor_2nd-color);
+}
+
+.colorTest3 {
+    margin-top: var(--commonMargin-margin);
+    width: var(--testWidth-width);
+    height: var(--testheight-height);
+    background-color: var(--commonColor_3rd-color);
+}
+
+.colorTest4 {
+    margin-top: var(--commonMargin-margin);
+    width: var(--testWidth-width);
+    height: var(--testheight-height);
+    background-color: var(--commonColor_4th-color);
+}
+
+
+/* 영문폰트 Roboto Black 900 사용법 
+
+1. 아래 3줄을 return 파트에 태그로 입력한다.
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet" />
+
+2. 폰트적용을 원하는 class 혹은 폰트에 css로 아래 font-family를 입력한다
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+/* 한글폰트 Gothic A1 사용법 
+
+1. 아래 3줄을 return 파트에 태그로 입력한다.
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+2. 폰트적용을 원하는 class 혹은 폰트에 css로 아래 font-family를 입력한다
+
+font-family: 'Gothic A1', sans-serif;
+*/
+
